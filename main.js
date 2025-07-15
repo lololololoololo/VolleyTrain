@@ -39,7 +39,7 @@ const foodData = {
   "butterbrezel": 290,"salzstangen": 360,"reiswaffel": 387, "schokoriegel": 520, "studentenfutter": 490, "müsliriegel": 430, "joghurt mit früchten": 110,
   "smoothie (frucht)": 60, "quark snack": 95, "milchschnitte": 447, "gummibärchen": 343, "popcorn (gesalzen)": 387, "nussmix": 607,
   "schnitzel mit pommes": 680,"nudeln mit tomatensauce": 410, "reis mit curry": 520, "hähnchen mit gemüse": 450, "bratwurst mit kartoffelsalat": 580, "käsespätzle": 710,
-  "frikadelle mit kartoffeln": 610, "currywurst": 480, "suppe (gemüse)": 120, "pfannkuchen herzhaft": 300, "fischstäbchen mit kartoffelpüree": 480 "snickers": 488,   "twix": 483,
+  "frikadelle mit kartoffeln": 610, "currywurst": 480, "suppe (gemüse)": 120, "pfannkuchen herzhaft": 300, "fischstäbchen mit kartoffelpüree": 480, "snickers": 488,  "twix": 483,
     "mars": 452,  "kitkat": 518,  "kinder schokolade": 535, "kinder bueno": 566,  "milka schokolade": 535, "ritter sport nuss": 560, "gummibärchen": 343,
     "lakritz": 325,  "mentos": 370,  "kaugummi (gezuckert)": 260,  "lollies": 390,  "keksmischung": 510,  "lebkuchen": 420,  "schokobons": 575,  "hanuta": 540,  "nussini": 530,  "milkshake schoko": 80,
     "eis sandwich": 220
