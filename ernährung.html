@@ -109,8 +109,20 @@
 <body>
   <h1>Ernährungstracker</h1>
 
- <input type="text" id="food" placeholder="z.B. Apfel" oninput="showSuggestions()" autocomplete="off" />
-<div id="suggestions"></div>
+<label for="food">Lebensmittel:</label>
+<div style="position: relative; display: inline-block; width: 100%;">
+  <input type="text" id="food" placeholder="z.B. Apfel" oninput="showSuggestions()" autocomplete="off" style="width: 100%;" />
+  <div id="suggestions" style="
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+  "></div>
+</div>
 
 
   <label for="amount">Menge (in g):</label>
