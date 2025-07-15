@@ -35,7 +35,8 @@ const foodData = {
     "kürbiskerne": 559, "hanfsamen": 553, "weintrauben": 69, "blaubeeren": 57, "grapefruit": 42,
     "orange": 47, "zitrone": 29, "limette": 30, "feige": 74, "dattel": 277,
     "rosinen": 299, "getrocknete aprikosen": 241, "getrocknete pflaumen": 240, "kichererbsen": 164, "edamame": 121,
-    "sojabohnen": 446, "okraschoten": 33, "pak choi": 13, "wasabi": 292, "kimchi": 15
+    "sojabohnen": 446, "okraschoten": 33, "pak choi": 13, "wasabi": 292, "kimchi": 15, "müsli-schoko": 410, "müsli-frucht": 370, "haferflocken": 389,
+
     
 };
 
