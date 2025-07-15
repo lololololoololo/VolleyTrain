@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ernährungstracker</title>
+  <script src="main.js" defer></script>
+  <style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2b6777;
+  }
+
+  label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+  }
+
+  input:focus {
+    border-color: #2b6777;
+    outline: none;
+  }
+
+  button {
+    background: #52ab98;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #3b8d78;
+  }
+
+  h3 {
+    margin-top: 30px;
+    color: #2b6777;
+  }
+
+  #food-list {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  #food-list li {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .delete-btn {
+    margin-left: 10px;
+    color: #d62828;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .delete-btn:hover {
+    transform: scale(1.2);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Ernährungstracker</h1>
+
+  <label for="food">Lebensmittel:</label>
+  <input type="text" id="food" placeholder="z.B. Apfel" />
+
+  <label for="amount">Menge (in g):</label>
+  <input type="number" id="amount" placeholder="z.B. 150" />
+
+  <button onclick="addFood()">Hinzufügen</button>
+
+  <h3>Kalorienlimit: <span id="limit">2175</span> kcal</h3>
+  <h3>Insgesamt aufgenommen: <span id="total">0</span> kcal</h3>
+
+  <ul id="food-list"></ul>
+</body>
+</html>
