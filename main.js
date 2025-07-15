@@ -39,6 +39,34 @@ const foodData = {
 
     
 };
+function showSuggestions() {
+  const input = document.getElementById("food");
+  const suggestionsBox = document.getElementById("suggestions");
+  const query = input.value.toLowerCase();
+
+  suggestionsBox.innerHTML = "";
+
+  if (!query || query.length < 1) return;
+
+  const matches = Object.keys(foodData).filter(item =>
+    item.toLowerCase().startsWith(query)
+  ).slice(0, 6); // Zeige max. 6 Vorschläge
+
+  matches.forEach(match => {
+    const div = document.createElement("div");
+    div.textContent = match;
+    div.style.padding = "8px";
+    div.style.cursor = "pointer";
+    div.style.borderBottom = "1px solid #eee";
+
+    div.addEventListener("click", () => {
+      input.value = match;
+      suggestionsBox.innerHTML = "";
+    });
+
+    suggestionsBox.appendChild(div);
+  });
+}
 
 let totalCalories = 0;
 let entries = [];
