@@ -109,8 +109,9 @@
 <body>
   <h1>Ernährungstracker</h1>
 
-  <label for="food">Lebensmittel:</label>
-  <input type="text" id="food" placeholder="z.B. Apfel" />
+ <input type="text" id="food" placeholder="z.B. Apfel" oninput="showSuggestions()" autocomplete="off" />
+<div id="suggestions"></div>
+
 
   <label for="amount">Menge (in g):</label>
   <input type="number" id="amount" placeholder="z.B. 150" />
