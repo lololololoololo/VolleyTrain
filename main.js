@@ -42,7 +42,7 @@ const foodData = {
   "frikadelle mit kartoffeln": 610, "currywurst": 480, "suppe (gemüse)": 120, "pfannkuchen herzhaft": 300, "fischstäbchen mit kartoffelpüree": 480, "snickers": 488,  "twix": 483,
     "mars": 452,  "kitkat": 518,  "kinder schokolade": 535, "kinder bueno": 566,  "milka schokolade": 535, "ritter sport nuss": 560, "gummibärchen": 343,
     "lakritz": 325,  "mentos": 370,  "kaugummi (gezuckert)": 260,  "lollies": 390,  "keksmischung": 510,  "lebkuchen": 420,  "schokobons": 575,  "hanuta": 540,  "nussini": 530,  "milkshake schoko": 80,
-    "eis sandwich": 220
+    "eis sandwich": 220,
 };
 function showSuggestions() {
   const input = document.getElementById("food");
